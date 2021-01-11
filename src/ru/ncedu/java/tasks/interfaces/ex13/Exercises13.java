@@ -12,7 +12,7 @@ import java.util.Comparator;
  * expression to specify the Comparator.
  */
 public class Exercises13 {
-    static void sortDir(File[] files) {
+    public static void sortDir(File[] files) {
         Arrays.sort(files, (f1, f2) -> {
             if (f1.isDirectory() && !f2.isDirectory()) {
                 return -1;
