@@ -5,7 +5,6 @@ public class Main {
     public static void main(String[] args){
         Greeter one = new Greeter("One", 3);
         Greeter two = new Greeter("Two",2);
-        Exercises10 exercises10 = new Exercises10();
         runTogether(one,two);
         runInOrder(one,two);
 
