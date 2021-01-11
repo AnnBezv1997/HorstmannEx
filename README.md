@@ -1,7 +1,7 @@
 
-#1 Core Java SE 9 for the Impatient" Cay S. Horstmann
+# Core Java SE 9 for the Impatient" Cay S. Horstmann
 
- 1. Fundamental Programming Structures
+1. Fundamental Programming Structures
  
 ex 1-10, 13, 14
 
