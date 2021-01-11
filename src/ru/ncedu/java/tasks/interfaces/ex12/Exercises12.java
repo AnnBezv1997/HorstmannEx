@@ -26,6 +26,6 @@ public class Exercises12 {
     public static void main(String args[]) {
         final String fileExtension = ".java";
         final String pathName = "F:\\java\\IDEA18\\homeworkNC\\src\\ru\\ncedu\\java\\tasks\\interfaces\\ex12";
-        System.out.println(getFiles(pathName, fileExtension));//[Exercises12.java, Main.java]
+        System.out.println(getFiles(pathName, fileExtension));//[Exercises12.java]
     }
 }
