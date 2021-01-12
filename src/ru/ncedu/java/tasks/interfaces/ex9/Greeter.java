@@ -20,7 +20,7 @@ public class Greeter implements Runnable{
     public void run() {
 
         for(int i =0; i < n;i++){
-            System.out.println("Hello word");
+            System.out.println("Hello, "+ target);
         }
     }
 }
