@@ -7,11 +7,11 @@ public class Main {
         new Thread(one).run();
         new Thread(two).run();
         /**
-         * Hello word
-         * Hello word
-         * Hello word
-         * Hello word
-         * Hello word
+         * Hello, One
+         * Hello, One
+         * Hello, One
+         * Hello, Two
+         * Hello, Two
          */
     }
 }
