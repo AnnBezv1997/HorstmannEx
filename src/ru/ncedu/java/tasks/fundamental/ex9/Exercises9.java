@@ -9,4 +9,17 @@ package ru.ncedu.java.tasks.fundamental.ex9;
  */
 
 public class Exercises9 {
+  public static void main(String[] args){
+        String string1 = "Exercises";
+        String string2 = String.copyValueOf(string1.toCharArray());
+        System.out.println(string1.equals(string2)); //true
+        System.out.println(string1 == string2); //false
+        //или
+        String string3 = "Exercises1";
+        char[] str4=new char[string3.length()] ;
+        string3.getChars(0,string3.length(),str4,0);
+        String string4 = new String(str4);
+        System.out.println(string3.equals(string4)); //true
+        System.out.println(string3 == string4); //false
+    }
 }
