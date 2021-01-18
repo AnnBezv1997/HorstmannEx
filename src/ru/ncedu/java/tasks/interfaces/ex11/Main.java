@@ -9,9 +9,9 @@ import static ru.ncedu.java.tasks.interfaces.ex11.Exercises11.getSubdirectoriesT
 public class Main {
     public static void main(String[] args) {
         List<File> files = getSubdirectoriesThree(".");
-        System.out.println(files.toString());    //[.\.idea, .\out, .\src]
+        System.out.println(files);    //[.\.idea, .\out, .\src]
         List<File> files1 = getSubdirectoriesTwo(".");
-        System.out.println(files.toString());    //[.\.idea, .\out, .\src]
+        System.out.println(files1);    //[.\.idea, .\out, .\src]
 
     }
 }
