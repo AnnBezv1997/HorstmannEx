@@ -15,17 +15,30 @@ import java.util.List;
  * method expression and an anonymous inner class
  */
 public class Exercises11 {
-    public File[] getDirectories(File file, FileFilter filter) {
-        ArrayList<File> files = new ArrayList<>();
-        for (File f: file.listFiles(filter)) {
-            if (f.isDirectory()) {
-                files.add(f);
-                getDirectories(f, filter);
+ 
+     public static List<File> getSubdirectoriesOne(String pathname) { 
+        List<File> result = new ArrayList<>();
+        File path = new File(pathname);
+        File[] subdir = path.listFiles(new FileFilter() {
+            public boolean accept(File pathname) {
+                return pathname.isDirectory();
             }
-        }
-
-        File[] result = new File[files.size()];
-        result = files.toArray(result);
+        });
+        result = Arrays.asList(subdir);
+        return result;
+    }
+    public static List<File> getSubdirectoriesTwo(String pathname) {
+        List<File> result = new ArrayList<>();
+        File path = new File(pathname);
+        File[] subdir = path.listFiles(pathname1 -> pathname1.isDirectory());
+        result = Arrays.asList(subdir);
+        return result;
+    }
+    public static List<File> getSubdirectoriesThree(String pathname) {
+        List<File> result = new ArrayList<File>();
+        File path = new File(pathname);
+        File[] subdir = path.listFiles(File::isDirectory);
+        result = Arrays.asList(subdir);
         return result;
     }
 }
