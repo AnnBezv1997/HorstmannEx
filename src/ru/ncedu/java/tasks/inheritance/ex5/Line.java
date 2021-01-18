@@ -13,8 +13,7 @@ public class Line extends Shape {
     public Point getCenter() {
         double x = ( this.from.getX() +this.to.getX()) / 2;
         double y = ( this.from.getY() + this.to.getY()) / 2;
-        this.point = new Point(x, y);
-        return this.point;
+        return new Point(x, y);
     }
     @Override
     public Line clone() {
